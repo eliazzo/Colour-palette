@@ -63,3 +63,14 @@ function changeName4(){
 //End
 
 // Lock function
+
+// function lockColor(){
+//     const lockList = document.getElementsByClassName("lock");
+//     console.log(lockList);
+//     const newColorOne = document.getElementById("color-picker-one").value;
+//     const 
+
+//     if (newColorOne === colorPickerOne.value)
+
+
+// }
