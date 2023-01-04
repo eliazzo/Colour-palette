@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: arial;
+}
+
+.color-box{
+    border: solid black 1px;
+    height: 500px;
+    width: 300px;
+    text-align: center;
+}
