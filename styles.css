@@ -11,13 +11,14 @@ button{
     margin: 2px 0px 2px 0px;
     background-color: #B6D0E2;
     border: none;
-    width: auto;
+    width: 100vw;
     height: 50px;
 }
 
 #color-box-container{
     display: flex;
     flex-direction: row;
+    width: 100vw;
 }
 
 .color-box{
