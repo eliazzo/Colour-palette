@@ -23,7 +23,7 @@ button{
 
 .color-box{
     height: 500px;
-    width: 300px;
+    width: 100vw;
     text-align: center;
     align-items: center;
     margin-left: 2px;
