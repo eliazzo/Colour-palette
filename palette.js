@@ -36,7 +36,7 @@ function changeColorFive(){
 
 // End
 
-// Change color name to match rgb code
+// Change color name to match hex code
 
 const colorNameList = document.getElementsByClassName("color-name");
 console.log(colorNameList);
@@ -74,3 +74,50 @@ function changeName4(){
 
 
 // }
+
+
+// Random color generator on spacebar
+
+function randomColor(){
+    const randomColor0 = Math.floor(Math.random()*16777215).toString(16);
+    colorBoxList[0].style.backgroundColor = '#' + randomColor0;
+    colorNameList[0].innerText = '#' + randomColor0;
+
+    const randomColor1 = Math.floor(Math.random()*16777215).toString(16);
+    colorBoxList[1].style.backgroundColor = '#' + randomColor1;
+    colorNameList[1].innerText = '#' + randomColor1;
+
+    const randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+    colorBoxList[2].style.backgroundColor = '#' + randomColor2;
+    colorNameList[2].innerText = '#' + randomColor2;
+
+    const randomColor3 = Math.floor(Math.random()*16777215).toString(16);
+    colorBoxList[3].style.backgroundColor = '#' + randomColor3;
+    colorNameList[3].innerText = '#' + randomColor3;
+
+    const randomColor4 = Math.floor(Math.random()*16777215).toString(16);
+    colorBoxList[4].style.backgroundColor = '#' + randomColor4;
+    colorNameList[4].innerText = '#' + randomColor4;
+
+
+// Set color picker to match background color
+
+    const colorPickerList = document.getElementsByClassName("color-picker");
+    console.log(colorPickerList);
+
+    // for (let i = 0; i < colorPickerList; i++){
+    //     colorPickerList[i].value = '#' + randomColor[i]
+    // }
+
+    document.getElementById("color-picker-one").value = '#' + randomColor0;
+    document.getElementById("color-picker-two").value = '#' + randomColor1;
+    document.getElementById("color-picker-three").value = '#' + randomColor2;
+    document.getElementById("color-picker-four").value = '#' + randomColor3;
+    document.getElementById("color-picker-five").value = '#' + randomColor4;
+
+// End
+}
+
+
+
+// End
