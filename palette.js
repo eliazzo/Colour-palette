@@ -38,21 +38,19 @@ function changeNameManual(){
 }
 
 
-
-
 // Lock function
 
-// function lockColor(){
-//     const lockList = document.getElementsByClassName("lock");
-//     console.log(lockList);
-//     const newColorOne = document.getElementById("color-picker-one").value;
-//     const 
+function lockColor(){}
 
-//     if (newColorOne === colorPickerOne.value)
+const lockList = document.querySelectorAll(".lock");
+console.log(lockList);
 
+for (let i = 0; i < lockList.length; i ++){
 
-// }
+    console.log("hello");
+    // For each lock item clicked, prevent randomColor
 
+}
 
 
 // Random color generator on click

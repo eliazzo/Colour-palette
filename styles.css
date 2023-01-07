@@ -1,15 +1,18 @@
 body{
     display: flex;
     flex-direction: column;
-    font-family: Verdana;
+    
 }
 
 button{
-    font-family: Verdana;
+    font-family: tahoma;
+    color: white;
+    letter-spacing: 2px;
     font-size: 20px;
+    font-weight: 100;
     border-radius: 25px;
     margin: 2px 0px 2px 0px;
-    background-color: #B6D0E2;
+    background-color: #6af403;
     border: none;
     width: 100vw;
     height: 50px;
@@ -32,6 +35,9 @@ button{
 }
 
 .color-name{
-   font-family: Verdana;
+   font-family: tahoma;
+   color: white;
+   letter-spacing: 2px;
    font-size: 20px;
+   font-weight: 100;
 }
