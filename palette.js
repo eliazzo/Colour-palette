@@ -37,20 +37,30 @@ function changeNameManual(){
     }
 }
 
-
 // Lock function
 
-function lockColor(){}
+let isUnlocked = true;
 
-const lockList = document.querySelectorAll(".lock");
-console.log(lockList);
+function lock(){
+    isUnlocked = false;
+}
 
-for (let i = 0; i < lockList.length; i ++){
+function unlock(){
+    isUnlocked = true;
+}
 
-    console.log("hello");
+
+
+// function lockColor(){}
+
+// const lockList = document.querySelectorAll(".lock");
+
+// for (let i = 0; i < lockList.length; i ++){
+
+//     console.log("hello");
     // For each lock item clicked, prevent randomColor
 
-}
+// }
 
 
 // Random color generator on click
@@ -70,11 +80,20 @@ function randomColor(){
 
     const randomColorArr = [randomColor0, randomColor1, randomColor2, randomColor3, randomColor4];
 
-// Set color picker to match background color
+// Set background color to match randomly generated color
+
+    const lockList = document.querySelectorAll(".lock");
+
+    for (let i = 0; i < lockList.length; i ++){
+
+    if (lockList[i] = isUnlocked) {
+    console.log("unlocked");
 
     for (let i = 0; i < colorBoxList.length; i++){
         colorBoxList[i].style.backgroundColor = '#' + randomColorArr[i];
     }
+
+// Set color picker to match background color
 
     for (let i = 0; i < colorPickerList.length; i++){
         colorPickerList[i].value = '#' + randomColorArr[i]
@@ -85,8 +104,16 @@ function randomColor(){
     for (let i = 0; i < colorDisplayList.length; i++){
         colorDisplayList[i].innerText = '#' + randomColorArr[i];
     }
+    }
+    
+
+    else {
+        lockList[i] =! isUnlocked;
+        console.log("locked");
+    }
+    
 
 }
-
+}
 
 
