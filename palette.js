@@ -1,14 +1,13 @@
 const colorBoxList = document.getElementsByClassName("color-box");
 
-const colorPickerListAlt = document.querySelectorAll(".color-picker");;
 
 // Change background color to match manually selected colors
 function changeColorManual(){
-    const newColor0 = document.getElementById("color-picker-one").value;
-    const newColor1 = document.getElementById("color-picker-two").value;
-    const newColor2 = document.getElementById("color-picker-three").value;
-    const newColor3 = document.getElementById("color-picker-four").value;
-    const newColor4 = document.getElementById("color-picker-five").value;
+    const newColor0 = document.getElementById("color-picker-0").value;
+    const newColor1 = document.getElementById("color-picker-1").value;
+    const newColor2 = document.getElementById("color-picker-2").value;
+    const newColor3 = document.getElementById("color-picker-3").value;
+    const newColor4 = document.getElementById("color-picker-4").value;
 
     const newColorArr = [newColor0, newColor1, newColor2, newColor3, newColor4];
 
@@ -18,17 +17,15 @@ function changeColorManual(){
 }
 
 // Display hex code when manually selected
-
 const colorDisplayList = document.getElementsByClassName("color-name");
 console.log(colorDisplayList);
 
 function changeNameManual(){
-
-    const newColor0 = document.getElementById("color-picker-one").value;
-    const newColor1 = document.getElementById("color-picker-two").value;
-    const newColor2 = document.getElementById("color-picker-three").value;
-    const newColor3 = document.getElementById("color-picker-four").value;
-    const newColor4 = document.getElementById("color-picker-five").value;
+    const newColor0 = document.getElementById("color-picker-0").value;
+    const newColor1 = document.getElementById("color-picker-1").value;
+    const newColor2 = document.getElementById("color-picker-2").value;
+    const newColor3 = document.getElementById("color-picker-3").value;
+    const newColor4 = document.getElementById("color-picker-4").value;
 
     const newColorArr = [newColor0, newColor1, newColor2, newColor3, newColor4];
 
@@ -37,40 +34,57 @@ function changeNameManual(){
     }
 }
 
-// Lock function
-
-let isUnlocked = true;
-
-function lock(){
-    isUnlocked = false;
+// Lock functions
+function lock0(){
+    document.getElementById("color-box-0").dataset.status = "locked"
+    console.log("locked0")
+}
+function unlock0(){
+    document.getElementById("color-box-0").dataset.status = "unlocked"
+    console.log("unlocked0")
 }
 
-function unlock(){
-    isUnlocked = true;
+function lock1(){
+    document.getElementById("color-box-1").dataset.status = "locked"
+    console.log("locked1")
+}
+function unlock1(){
+    document.getElementById("color-box-1").dataset.status = "unlocked"
+    console.log("unlocked1")
 }
 
+function lock2(){
+    document.getElementById("color-box-2").dataset.status = "locked"
+    console.log("locked2")
+}
+function unlock2(){
+    document.getElementById("color-box-2").dataset.status = "unlocked"
+    console.log("unlocked2")
+}
 
+function lock3(){
+    document.getElementById("color-box-3").dataset.status = "locked"
+    console.log("locked3")
+}
+function unlock3(){
+    document.getElementById("color-box-3").dataset.status = "unlocked"
+    console.log("unlocked3")
+}
 
-// function lockColor(){}
-
-// const lockList = document.querySelectorAll(".lock");
-
-// for (let i = 0; i < lockList.length; i ++){
-
-//     console.log("hello");
-    // For each lock item clicked, prevent randomColor
-
-// }
+function lock4(){
+    document.getElementById("color-box-1").dataset.status = "locked"
+    console.log("locked4")
+}
+function unlock4(){
+    document.getElementById("color-box-1").dataset.status = "unlocked"
+    console.log("unlocked4")
+}
 
 
 // Random color generator on click
-
 function randomColor(){
 
-
     const colorPickerList = document.querySelectorAll(".color-picker");
-    console.log(colorPickerList);
-
     
     const randomColor0 = Math.floor(Math.random()*16777215).toString(16);
     const randomColor1 = Math.floor(Math.random()*16777215).toString(16);
@@ -80,40 +94,23 @@ function randomColor(){
 
     const randomColorArr = [randomColor0, randomColor1, randomColor2, randomColor3, randomColor4];
 
-// Set background color to match randomly generated color
 
-    const lockList = document.querySelectorAll(".lock");
-
-    for (let i = 0; i < lockList.length; i ++){
-
-    if (lockList[i] = isUnlocked) {
-    console.log("unlocked");
-
+// According to locked/unlocked status
     for (let i = 0; i < colorBoxList.length; i++){
+        // if (colorBoxList[i].dataset.status = "locked") {
+        // console.log("locked");
+        // continue;
+        // }
+        
+        // else (colorBoxList.dataset[i].status = "unlocked")
+        // console.log("unlocked");
+    // Set background color to match randomly generated color
         colorBoxList[i].style.backgroundColor = '#' + randomColorArr[i];
-    }
-
-// Set color picker to match background color
-
-    for (let i = 0; i < colorPickerList.length; i++){
-        colorPickerList[i].value = '#' + randomColorArr[i]
-    }
-
-// Display hex code of randomly generated colors
-
-    for (let i = 0; i < colorDisplayList.length; i++){
-        colorDisplayList[i].innerText = '#' + randomColorArr[i];
-    }
-    }
     
-
-    else {
-        lockList[i] =! isUnlocked;
-        console.log("locked");
-    }
+    // Set color picker to match background color
+        colorPickerList[i].value = '#' + randomColorArr[i];
     
-
+    // Display hex code of randomly generated colors
+        colorDisplayList[i].innerText = randomColorArr[i]; 
+    }
 }
-}
-
-

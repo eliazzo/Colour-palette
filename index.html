@@ -11,30 +11,125 @@
 <body>
     <button onclick="randomColor()">Click to generate new colours</button>
     <div id="color-box-container">
-        <div class="color-box" id="color-one" style="background-color: #e30202;">
-            <h1 class="color-name" id="color-one-name">#e30202</h1>
-            <h2 class="lock" onclick="lock()" ondblclick="unlock()">&#128274</h2>
-            <input type="color" value="#e30202" class="color-picker" id="color-picker-one" onchange="changeColorManual(), changeNameManual()">
+        <div 
+            class="color-box" 
+            id="color-box-0" 
+            style="background-color: #e30202;"
+            data-status="unlocked"
+            >
+            <h1 
+                class="color-name" 
+                id="color-one-name"
+                >e30202</h1>
+            <h2 
+                class="lock" 
+                id="lock0"
+                onclick="lock0()" 
+                ondblclick="unlock0()"
+                >&#128274</h2>
+            <input 
+                type="color" 
+                value="#e30202" 
+                class="color-picker" 
+                id="color-picker-0" 
+                onchange="changeColorManual(), changeNameManual()"
+                >
         </div>
-        <div class="color-box" id="color-two" style="background-color: #32a2d2;">
-            <h1 class="color-name">#32a2d2</h1>
-            <h2 class="lock" onclick="lock()" ondblclick="unlock()">&#128274</h2>
-            <input type="color" value="#32a2d2" class="color-picker" id="color-picker-two" onchange="changeColorManual(), changeNameManual()">
+
+        <div 
+            class="color-box" 
+            id="color-box-1" 
+            style="background-color: #32a2d2;"
+            data-status="unlocked"
+            >
+            <h1 
+                class="color-name"
+                >32a2d2</h1>
+            <h2 
+                id="lock1"
+                class="lock" 
+                onclick="lock1()" 
+                ondblclick="unlock1()"
+                >&#128274</h2>
+            <input 
+                type="color" 
+                value="#32a2d2" 
+                class="color-picker" 
+                id="color-picker-1" 
+                onchange="changeColorManual(), changeNameManual()"
+                >
         </div>
-        <div class="color-box" id="color-three" style="background-color: #95cb20;">
-            <h1 class="color-name">#95cb20</h1>
-            <h2 class="lock" onclick="lock()" ondblclick="unlock()">&#128274</h2>
-            <input type="color" value="#95cb20" class="color-picker" id="color-picker-three" onchange="changeColorManual(), changeNameManual()">
+
+        <div 
+            class="color-box" 
+            id="color-box-2" 
+            style="background-color: #95cb20;"
+            data-status="unlocked"
+            >
+            <h1 
+                class="color-name"
+                >95cb20</h1>
+            <h2 
+                id="lock2"
+                class="lock" 
+                onclick="lock2()" 
+                ondblclick="unlock2()"
+                >&#128274</h2>
+            <input 
+                type="color" 
+                value="#95cb20" 
+                class="color-picker" 
+                id="color-picker-2" 
+                onchange="changeColorManual(), changeNameManual()"
+                >
         </div>
-        <div class="color-box" id="color-four" style="background-color: #ffd500;">
-            <h1 class="color-name">#ffd500</h1>
-            <h2 class="lock" onclick="lock()" ondblclick="unlock()">&#128274</h2>
-            <input type="color" value="#ffd500" class="color-picker" id="color-picker-four" onchange="changeColorManual(), changeNameManual()">
+
+        <div 
+            class="color-box" 
+            id="color-box-3" 
+            style="background-color: #ffd500;"
+            data-status="unlocked"
+            >
+            <h1 
+                class="color-name"
+                >ffd500</h1>
+            <h2 
+                id="lock3"
+                class="lock" 
+                onclick="lock3()" 
+                ondblclick="unlock3()"
+                >&#128274</h2>
+            <input 
+                type="color" 
+                value="#ffd500" 
+                class="color-picker" 
+                id="color-picker-3" 
+                onchange="changeColorManual(), changeNameManual()"
+                >
         </div>
-        <div class="color-box" id="color-five" style="background-color: #ac30c5;">
-            <h1 class="color-name">#ac30c5</h1>
-            <h2 class="lock" onclick="lock()" ondblclick="unlock()">&#128274</h2>
-            <input type="color" value="#ac30c5" class="color-picker" id="color-picker-five" onchange="changeColorManual(), changeNameManual()">
+
+        <div 
+            class="color-box" 
+            id="color-box-4" 
+            style="background-color: #ac30c5;"
+            data-status="unlocked"
+            >
+            <h1 
+                class="color-name"
+                >ac30c5</h1>
+            <h2 
+                id="lock4"
+                class="lock" 
+                onclick="lock4()" 
+                ondblclick="unlock4()"
+                >&#128274</h2>
+            <input 
+                type="color" 
+                value="#ac30c5" 
+                class="color-picker" 
+                id="color-picker-4" 
+                onchange="changeColorManual(), changeNameManual()"
+                >
         </div>
     </div>
 </body>

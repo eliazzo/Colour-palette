@@ -5,14 +5,14 @@ body{
 }
 
 button{
-    font-family: tahoma;
+    font-family: sans-serif;
     color: white;
+    background-color: #3b2f34;
     letter-spacing: 2px;
     font-size: 20px;
     font-weight: 100;
     border-radius: 25px;
     margin: 2px 0px 2px 0px;
-    background-color: #6af403;
     border: none;
     width: 100vw;
     height: 50px;
@@ -35,7 +35,7 @@ button{
 }
 
 .color-name{
-   font-family: tahoma;
+   font-family: sans-serif;
    color: white;
    letter-spacing: 2px;
    font-size: 20px;
