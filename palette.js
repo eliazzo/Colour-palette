@@ -1,3 +1,4 @@
+
 const colorBoxList = document.getElementsByClassName("color-box");
 
 
@@ -35,6 +36,8 @@ function changeNameManual(){
 }
 
 // Lock functions
+
+//Color-box-0
 function lock0(){
     document.getElementById("color-box-0").dataset.status = "locked"
     console.log("locked0")
@@ -43,7 +46,7 @@ function unlock0(){
     document.getElementById("color-box-0").dataset.status = "unlocked"
     console.log("unlocked0")
 }
-
+//Color-box-1
 function lock1(){
     document.getElementById("color-box-1").dataset.status = "locked"
     console.log("locked1")
@@ -52,7 +55,7 @@ function unlock1(){
     document.getElementById("color-box-1").dataset.status = "unlocked"
     console.log("unlocked1")
 }
-
+//Color-box-2
 function lock2(){
     document.getElementById("color-box-2").dataset.status = "locked"
     console.log("locked2")
@@ -61,7 +64,7 @@ function unlock2(){
     document.getElementById("color-box-2").dataset.status = "unlocked"
     console.log("unlocked2")
 }
-
+//Color-box-3
 function lock3(){
     document.getElementById("color-box-3").dataset.status = "locked"
     console.log("locked3")
@@ -70,7 +73,7 @@ function unlock3(){
     document.getElementById("color-box-3").dataset.status = "unlocked"
     console.log("unlocked3")
 }
-
+//Color-box-4
 function lock4(){
     document.getElementById("color-box-1").dataset.status = "locked"
     console.log("locked4")
@@ -97,20 +100,24 @@ function randomColor(){
 
 // According to locked/unlocked status
     for (let i = 0; i < colorBoxList.length; i++){
-        // if (colorBoxList[i].dataset.status = "locked") {
-        // console.log("locked");
-        // continue;
-        // }
+        if(colorBoxList[i].dataset.status === "locked"){
+        console.log("locked");
+        continue;
+        }
         
-        // else (colorBoxList.dataset[i].status = "unlocked")
-        // console.log("unlocked");
-    // Set background color to match randomly generated color
-        colorBoxList[i].style.backgroundColor = '#' + randomColorArr[i];
+        
+        else (colorBoxList[i].dataset.status === "unlocked") 
+            console.log("unlocked");
+         // Set background color to match randomly generated color
+            colorBoxList[i].style.backgroundColor = '#' + randomColorArr[i];
     
-    // Set color picker to match background color
-        colorPickerList[i].value = '#' + randomColorArr[i];
-    
-    // Display hex code of randomly generated colors
-        colorDisplayList[i].innerText = randomColorArr[i]; 
+         // Set color picker to match background color
+            colorPickerList[i].value = '#' + randomColorArr[i];
+         
+         // Display hex code of randomly generated colors
+            colorDisplayList[i].innerText = randomColorArr[i]; 
+        
     }
 }
+
+document.addEventListener("keypress", randomColor);
