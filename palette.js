@@ -46,6 +46,15 @@ function unlock0(){
     document.getElementById("color-box-0").dataset.status = "unlocked"
     console.log("unlocked0")
 }
+function callLock0(){
+    if (document.getElementById("color-box-0").dataset.status === "unlocked"){
+        lock0();
+    } else {
+        unlock0();
+    }
+}
+
+
 //Color-box-1
 function lock1(){
     document.getElementById("color-box-1").dataset.status = "locked"
@@ -55,6 +64,14 @@ function unlock1(){
     document.getElementById("color-box-1").dataset.status = "unlocked"
     console.log("unlocked1")
 }
+function callLock1(){
+    if (document.getElementById("color-box-1").dataset.status === "unlocked"){
+        lock1();
+    } else {
+        unlock1();
+    }
+}
+
 //Color-box-2
 function lock2(){
     document.getElementById("color-box-2").dataset.status = "locked"
@@ -64,6 +81,14 @@ function unlock2(){
     document.getElementById("color-box-2").dataset.status = "unlocked"
     console.log("unlocked2")
 }
+function callLock2(){
+    if (document.getElementById("color-box-2").dataset.status === "unlocked"){
+        lock2();
+    } else {
+        unlock2();
+    }
+}
+
 //Color-box-3
 function lock3(){
     document.getElementById("color-box-3").dataset.status = "locked"
@@ -73,6 +98,13 @@ function unlock3(){
     document.getElementById("color-box-3").dataset.status = "unlocked"
     console.log("unlocked3")
 }
+function callLock3(){
+    if (document.getElementById("color-box-3").dataset.status === "unlocked"){
+        lock3();
+    } else {
+        unlock3();
+    }
+}
 //Color-box-4
 function lock4(){
     document.getElementById("color-box-1").dataset.status = "locked"
@@ -81,6 +113,13 @@ function lock4(){
 function unlock4(){
     document.getElementById("color-box-1").dataset.status = "unlocked"
     console.log("unlocked4")
+}
+function callLock4(){
+    if (document.getElementById("color-box-4").dataset.status === "unlocked"){
+        lock4();
+    } else {
+        unlock4();
+    }
 }
 
 

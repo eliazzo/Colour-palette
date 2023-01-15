@@ -9,7 +9,7 @@
     <script src="palette.js"></script>
 </head>
 <body>
-    <button onclick="randomColor()">Press spacebar to generate new colours</button>
+    <button onclick="randomColor()">Press any key to generate new colours</button>
     <div id="color-box-container">
         <div 
             class="color-box" 
@@ -24,8 +24,7 @@
             <h2 
                 class="lock" 
                 id="lock0"
-                onclick="lock0()" 
-                ondblclick="unlock0()"
+                onclick="callLock0()"
                 >&#128274</h2>
             <input 
                 type="color" 
@@ -48,8 +47,7 @@
             <h2 
                 id="lock1"
                 class="lock" 
-                onclick="lock1()" 
-                ondblclick="unlock1()"
+                onclick="callLock1()"
                 >&#128274</h2>
             <input 
                 type="color" 
@@ -72,8 +70,7 @@
             <h2 
                 id="lock2"
                 class="lock" 
-                onclick="lock2()" 
-                ondblclick="unlock2()"
+                onclick="callLock2()"
                 >&#128274</h2>
             <input 
                 type="color" 
@@ -96,8 +93,7 @@
             <h2 
                 id="lock3"
                 class="lock" 
-                onclick="lock3()" 
-                ondblclick="unlock3()"
+                onclick="callLock3()"
                 >&#128274</h2>
             <input 
                 type="color" 
@@ -120,8 +116,7 @@
             <h2 
                 id="lock4"
                 class="lock" 
-                onclick="lock4()" 
-                ondblclick="unlock4()"
+                onclick="callLock4()"
                 >&#128274</h2>
             <input 
                 type="color" 
