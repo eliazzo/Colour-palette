@@ -154,7 +154,7 @@ function randomColor(){
             colorPickerList[i].value = '#' + randomColorArr[i];
          
          // Display hex code of randomly generated colors
-            colorDisplayList[i].innerText = randomColorArr[i]; 
+            colorDisplayList[i].innerText = '#' + randomColorArr[i]; 
         
     }
 }
