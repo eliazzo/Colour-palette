@@ -4,7 +4,7 @@
 
 ### Users can interact with the page by editing the randomly generated colours. 
 
-## Developing the Colour Palette
+# Developing the Colour Palette
 
 ## randomColor()
 
