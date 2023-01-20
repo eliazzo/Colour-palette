@@ -1,5 +1,10 @@
-
+// Select all color box divs
 const colorBoxList = document.getElementsByClassName("color-box");
+console.log(colorBoxList);
+const colorBoxListArr = Array.from(colorBoxList);
+console.log(colorBoxListArr);
+
+
 
 
 // Change background color to match manually selected colors
@@ -36,15 +41,50 @@ function changeNameManual(){
 }
 
 // Lock functions
+const lockList = document.getElementsByClassName('lock');
+console.log(lockList);
+const lockListArr = Array.from(lockList);
+console.log(lockListArr);
+
+
+// const colorBackground = document.querySelectorAll(".color-box")
+
+
+
+// function lock(){
+//     console.log("locked");
+//     for (let i=0; i<lockList.length; i++){
+//         lockList[i].innerHTML = "&#128274";
+//     }
+
+//     for(let i=0; i<colorBackground.length; i++){
+//         colorBackground[i].dataset.status = "locked";
+//     }
+// }
+
+// function unlock(){
+//     console.log("unlocked");
+//     for (let i=0; i<lockList.length; i++){
+//         lockList[i].innerHTML = "&#128275";
+//     }
+
+//     for(let i=0; i<colorBackground.length; i++){
+//         colorBackground[i].dataset.status = "unlocked";
+//     }
+// }
+
+
 
 //Color-box-0
 function lock0(){
-    document.getElementById("color-box-0").dataset.status = "locked"
-    console.log("locked0")
+    document.getElementById("color-box-0").dataset.status = "locked";
+    lockList[0].innerHTML = "&#128274";
+    console.log("locked0");
 }
 function unlock0(){
-    document.getElementById("color-box-0").dataset.status = "unlocked"
-    console.log("unlocked0")
+    document.getElementById("color-box-0").dataset.status = "unlocked";
+    lockList[0].innerHTML = "&#128275";
+    console.log("unlocked0");
 }
 function callLock0(){
     if (document.getElementById("color-box-0").dataset.status === "unlocked"){
@@ -58,10 +98,12 @@ function callLock0(){
 //Color-box-1
 function lock1(){
     document.getElementById("color-box-1").dataset.status = "locked"
+    lockList[1].innerHTML = "&#128274";
     console.log("locked1")
 }
 function unlock1(){
-    document.getElementById("color-box-1").dataset.status = "unlocked"
+    document.getElementById("color-box-1").dataset.status = "unlocked";
+    lockList[1].innerHTML = "&#128275";
     console.log("unlocked1")
 }
 function callLock1(){
@@ -75,10 +117,12 @@ function callLock1(){
 //Color-box-2
 function lock2(){
     document.getElementById("color-box-2").dataset.status = "locked"
+    lockList[2].innerHTML = "&#128274";
     console.log("locked2")
 }
 function unlock2(){
-    document.getElementById("color-box-2").dataset.status = "unlocked"
+    document.getElementById("color-box-2").dataset.status = "unlocked";
+    lockList[2].innerHTML = "&#128275";
     console.log("unlocked2")
 }
 function callLock2(){
@@ -92,10 +136,13 @@ function callLock2(){
 //Color-box-3
 function lock3(){
     document.getElementById("color-box-3").dataset.status = "locked"
+    lockList[3].innerHTML = "&#128274";
     console.log("locked3")
+    
 }
 function unlock3(){
-    document.getElementById("color-box-3").dataset.status = "unlocked"
+    document.getElementById("color-box-3").dataset.status = "unlocked";
+    lockList[3].innerHTML = "&#128275";
     console.log("unlocked3")
 }
 function callLock3(){
@@ -105,13 +152,16 @@ function callLock3(){
         unlock3();
     }
 }
+
 //Color-box-4
 function lock4(){
-    document.getElementById("color-box-1").dataset.status = "locked"
+    document.getElementById("color-box-4").dataset.status = "locked";
+    lockList[4].innerHTML = "&#128274";
     console.log("locked4")
 }
 function unlock4(){
-    document.getElementById("color-box-1").dataset.status = "unlocked"
+    document.getElementById("color-box-4").dataset.status = "unlocked";
+    lockList[4].innerHTML = "&#128275";
     console.log("unlocked4")
 }
 function callLock4(){

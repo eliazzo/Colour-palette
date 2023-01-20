@@ -20,4 +20,4 @@
 ## changeNameManual()
 
 ## Lock functions
-### They can lock selected colours which prevents it from changing.
+### Users can can lock selected colors which will prevent it from changing.
